@@ -6,7 +6,7 @@
 
 | 工具 | 类型 | 简介 | 入口 |
 | --- | --- | --- | --- |
-| DeepSeek DeskBand | Windows 任务栏工具 | 在任务栏显示 DeepSeek API 余额，支持 MSI 安装和源码打包。 | [安装包](https://github.com/leidichen/reddy-ai-toolbox/releases/latest/download/DeepSeekDeskBand.msi) / [源码说明](tools/deepseek-deskband/README.md) |
+| DeepSeek DeskBand | Win 任务栏工具 | 在任务栏显示 DeepSeek API 余额 | [安装包](https://github.com/leidichen/reddy-ai-toolbox/releases/latest/download/DeepSeekDeskBand.msi) / [源码说明](tools/deepseek-deskband/README.md) |
 
 ## 说明
 
