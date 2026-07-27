@@ -8,15 +8,11 @@
 
 | 工具 | 类型 | 状态 | 说明 |
 | --- | --- | --- | --- |
-| DeepSeek Balance Tray | Windows 托盘工具 | 计划中 | 在任务栏区域查看 DeepSeek API 余额。 |
-| PDF Converter | 桌面工具 | 整理中 | 面向本地使用的 PDF 转换与处理工具。 |
-| Obsidian Plugin Mods | Obsidian 插件改装 | 持续整理 | 基于个人知识库工作流改造的 Obsidian 插件。 |
+| DeepSeek DeskBand | Windows 任务栏工具 | 已整理 | 在 Windows 任务栏实时显示 DeepSeek API 可用余额。 |
 
 ## 快速入口
 
-- [DeepSeek Balance Tray](tools/deepseek-balance-tray/README.md)
-- [PDF Converter](tools/pdf-converter/README.md)
-- [Obsidian Plugin Mods](tools/obsidian-plugin-mods/README.md)
+- [DeepSeek DeskBand](tools/deepseek-deskband/README.md)
 - [构建记录](docs/build-notes.md)
 - [更新日志](docs/changelog.md)
 - [许可与来源说明](docs/license-notes.md)
@@ -34,21 +30,14 @@ reddy-ai-toolbox/
   README.md
   LICENSE
   tools/
-    deepseek-balance-tray/
+    deepseek-deskband/
       README.md
-      src/
-      screenshots/
-      releases/
-    pdf-converter/
-      README.md
-      src/
-      screenshots/
-      releases/
-    obsidian-plugin-mods/
-      README.md
-      src/
-      screenshots/
-      notes/
+      README.en.md
+      DeskBandWidget.csproj
+      *.cs
+      Controls/
+      Interop/
+      installer/
   docs/
     build-notes.md
     changelog.md
@@ -78,3 +67,6 @@ reddy-ai-toolbox/
 
 本仓库默认使用 MIT License。  
 如果某个子工具基于第三方项目改造，请以该工具目录中的说明和原项目许可证为准。
+
+
+
