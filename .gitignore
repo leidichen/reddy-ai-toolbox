@@ -1,0 +1,44 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+dist/
+build/
+*.spec
+
+# Node
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# Electron / desktop builds
+out/
+release/
+*.exe
+*.msi
+*.zip
+
+# Local secrets
+.env
+.env.*
+*.local
+
+# Temporary files
+tmp/
+temp/
+.cache/
