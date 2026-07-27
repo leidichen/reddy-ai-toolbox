@@ -56,27 +56,36 @@ cd 项目目录
 
 ---
 
-## MSI 安装包（推荐）
+## MSI 安装包（推荐普通用户）
 
-一键安装，支持在 **设置 → 应用 → 应用和功能** 中卸载。
+普通用户建议直接下载 GitHub Release 里的 MSI 安装包：
 
-### 编译 MSI
-
-```powershell
-# 需要 WiX Toolset，脚本会自动安装
-.\installer\build-installer.ps1
-```
-
-产物：`installer\DeepSeekDeskBand.msi`
+- 下载地址：[DeepSeekDeskBand.msi](https://github.com/leidichen/reddy-ai-toolbox/releases/latest/download/DeepSeekDeskBand.msi)
+- 备用入口：[查看全部 Releases](https://github.com/leidichen/reddy-ai-toolbox/releases)
 
 ### 安装
 
-1. 双击 `DeepSeekDeskBand.msi` → 下一步 → 安装
-2. 右键任务栏 → **工具栏** → 勾选 **"DeepSeek DeskBand"**
-3. 左键点击组件 → **设置 API Key**
+1. 下载 `DeepSeekDeskBand.msi`
+2. 双击安装包 → 下一步 → 安装
+3. 右键任务栏 → **工具栏** → 勾选 **"DeepSeek DeskBand"**
+4. 左键点击组件 → **设置 API Key**
+
+如果 Windows SmartScreen 或安全软件提示风险，请确认文件来源是本仓库 Release 页面后再继续。
+
+### 如果安装包不好使
+
+如果 MSI 在你的电脑上无法安装或无法显示任务栏组件，可以下载源码，然后让 Claude、Codex 等 AI 编程工具根据本项目源码重新打包或辅助安装。
+
+源码打包方式：
+
+```powershell
+# 需要 .NET SDK、.NET Framework Developer Pack 和 WiX Toolset
+.\installer\build-installer.ps1
+```
+
+生成结果：`installer\DeepSeekDeskBand.msi`
 
 ### 卸载
-
 **设置 → 应用 → 应用和功能 → DeepSeek DeskBand → 卸载**
 
 > **!** 卸载时会自动清除凭据管理器中的 API Key，但以防万一你也可以手动确认：
@@ -166,4 +175,5 @@ taskkill /f /im explorer.exe && start explorer.exe
 ### v1.0.0
 
 - 原始版本，由 [leidichen/DeepSeek-DeskBand](https://github.com/leidichen/DeepSeek-DeskBand) 提供
+
 
