@@ -56,27 +56,36 @@ After installation, right-click the taskbar → **Toolbars** → check **"DeepSe
 
 ---
 
-## MSI Installer (Recommended)
+## MSI Installer (Recommended for most users)
 
-One-click install, supports uninstall via **Settings → Apps → Apps & features**.
+Most users should download the MSI installer from GitHub Releases:
 
-### Build MSI
+- Download: [DeepSeekDeskBand.msi](https://github.com/leidichen/reddy-ai-toolbox/releases/latest/download/DeepSeekDeskBand.msi)
+- Backup entry: [All Releases](https://github.com/leidichen/reddy-ai-toolbox/releases)
+
+### Install
+
+1. Download `DeepSeekDeskBand.msi`
+2. Double-click the installer → Next → Install
+3. Right-click taskbar → **Toolbars** → check **"DeepSeek DeskBand"**
+4. Left-click the widget → **Set API Key**
+
+If Windows SmartScreen or security software shows a warning, continue only after confirming the file is downloaded from this repository's Release page.
+
+### If the installer does not work
+
+If the MSI cannot install or the taskbar component does not appear on your PC, download the source code and ask an AI coding tool such as Claude or Codex to rebuild the package or assist with installation from this project.
+
+Build from source:
 
 ```powershell
-# WiX Toolset is required; the script will install it automatically
+# Requires .NET SDK, .NET Framework Developer Pack, and WiX Toolset
 .\installer\build-installer.ps1
 ```
 
 Output: `installer\DeepSeekDeskBand.msi`
 
-### Install
-
-1. Double-click `DeepSeekDeskBand.msi` → Next → Install
-2. Right-click taskbar → **Toolbars** → check **"DeepSeek DeskBand"**
-3. Left-click the widget → **Set API Key**
-
 ### Uninstall
-
 **Settings → Apps → Apps & features → DeepSeek DeskBand → Uninstall**
 
 > **!** The API Key in Credential Manager is cleared automatically on uninstall, but you can manually verify:
@@ -166,5 +175,6 @@ taskkill /f /im explorer.exe && start explorer.exe
 ### v1.0.0
 
 - Initial release by [leidichen/DeepSeek-DeskBand](https://github.com/leidichen/DeepSeek-DeskBand)
+
 
 
